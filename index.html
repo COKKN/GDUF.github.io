@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>出入凭证生成器</title>
+    <style>
+        .case {
+            float: center;
+            width: 23%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 align="left">
+        广东金融学院出入凭证生成器
+    </h1>
+    <div align="center" class="case">
+        <table>
+            <tr>
+                <form action="" name="form1">
+                    <h2 align="left">学号:&nbsp;<input type="text" name="studentId" value=""></h2>
+                    <h2 align="left">姓名:&nbsp;<input type="text" name="studentName" value=""></h2>
+                </form>
+            </tr>
+            <tr>
+                <h2 align="center">
+                    <input type="submit" value="出校" onClick="out()">
+                    &nbsp;&nbsp;&nbsp;
+                    <input type="submit" value="入校" onClick="enter()">
+                </h2>
+            </tr>
+        </table>
+    </div>
+</body>
+<script Language="JavaScript">
+    function out() {
+        document.form1.action = "out.html";
+        document.form1.submit();
+    }
+
+    function enter() {
+        document.form1.action = "in.html";
+        document.form1.submit();
+    }
+</script>
+
+</html>
